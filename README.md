@@ -4,7 +4,7 @@ Projeto realizado ao longo da NLW Rocketseat
 <p align><img src="/img/captura.png"></p>
 <br>
 
-2º DIA (02/06) - Formulário:
+2º DIA (02/06) - FORMULÁRIO:
 <p align><img src="/img/captura2.png"></p>
 <br>
 
