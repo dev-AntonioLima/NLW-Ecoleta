@@ -17,6 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <!-- Fim Google Fonts-->
 
+<script src="scripts/create-point.js"></script>
 
 </head>
 <!-- Fim HEAD -->
@@ -28,7 +29,7 @@
 <!-- Início Header -->
 <header>
 <img src="img/icons/logo.svg" alt="logomarca">
-<a href="#">
+<a href="index.html">
 <span></span>
 Voltar para home
 </a>
@@ -69,8 +70,6 @@ Voltar para home
 </div>
 </div>
 
-
-
 <div class="field-group">
 
 <!-- Campo Estado -->
@@ -78,9 +77,8 @@ Voltar para home
 <label for="state">Estado</label>
 <select name="uf">
 <option value="">Selecione o Estado</option>
-<option value="1">Estados</option>
 </select>
-</div>
+<input type="hidden" name="state" required ></div>
 
 <!-- Campo Cidade -->
 <div class="field">

@@ -1,34 +1,9 @@
-/*document
-.querySelector("select[name=uf]")
-.addEventListener("change", () => {
-    console.log("mudei")
-} )*/
-
 function populateUFs() {
-const ufSelect = 
-document .querySelector("select[name=uf]")
+const ufSelect = document.querySelector("select[name=uf]")
 
-fetch("https://servicodados.ibge.gov.br/api/v1/localidades/distritos")
-.then( res =>  res.json())
-.then( data => {
+fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados/33/distritos")
+.then( (res) => { return res.json() })
+.then( states => {
 
+ufSelect.innerHTML = `<option value="1">Valor</option>
 
-for ( const state of states ) {
-fSelect.innerHTML = ufSelect.innerHTML + '<option value="${}"</option>'
-}
-
-
-
-
-})
-}
-
-populateUFs()
-
-
-document
-.querySelector("select[name=uf]")
-.addEventListener("change", () => {
-console.log("mudei")
-}
-)
