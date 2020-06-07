@@ -9,7 +9,7 @@ Projeto realizado ao longo da NLW Rocketseat
 <br>
 
 3º DIA (03/06) - :
-<p align><img src="#"></p>
+<p align><img src="/img/captura3.png"></p>
 <br>
 
 4º DIA (04/06) - :
