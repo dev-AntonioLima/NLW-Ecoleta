@@ -44,3 +44,79 @@ document
 .querySelector("select[name=uf]")
 .addEventListener("change", getCities)
 
+
+
+const itensToCollect = document.querySelectorAll(".itens-grid li")
+
+for (const item of itensToCollect) {
+    item.addEventListener("click", handleSelectedItem)
+}
+
+const collectedItens = document.querySelector("input[name=itens]")
+
+let selectedItens = []
+
+function handleSelectedItem(event) {
+    const itemLi = event.target
+    itemLi.classList.toggle("selected")
+    const itemId = itemLi.dataset.id
+
+    const alreadySelected = selectedItens.findIndex( item => {
+        const itemFound = item == itemId
+        return itemFound
+
+    })
+
+    if( alreadySelected >= 0) {
+        const filteredItens = selectedItens.filter(item => {
+            const itemIsDifferent = item != itemId
+            return itemIsDifferent
+        })
+
+        selectedItens = filteredItens
+    } else {
+        selectedItens.push(itemId)
+    }
+
+    collectedItens.value = selectedItens
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const buttonSearch = document.querySelector("#page-home main a")
+const modal = document.querySelector("#modal")
+const close = document.querySelector("#modal .header a")
+
+
+buttonSearch.addEventListener("click", () => {
+    modal.classList.remove("hide")
+})
+
+close.addEventListener("click", () => {
+    modal.classList.add("hide")
+    })
